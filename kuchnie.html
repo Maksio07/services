@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Kompleksowe remonty i wykończenia mieszkań, klatek schodowych oraz inne usługi naprawczo-remontowe w Bydgoszczy i okolicy.">
-    <title>Usługi Remontowe Mirosław Bączkowski</title>
+    <title>Usługi Remontowe Mirosław Bączkowski - Kuchnie</title>
     <link rel="icon" type="image/png" sizes="96x96" href="./dist/img/favicon-96x96.png">
 <link rel="icon" href="./dist/img/favicon.svg" type="image/svg+xml" sizes="any">
 <link rel="icon" href="./dist/img/favicon.ico">
@@ -19,11 +19,10 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 <noscript>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap">
 </noscript>
 </head>
 
@@ -39,10 +38,10 @@
                 </div>
             </a>
             <div class="nav__links">
-                <a href="index.html#about-us" class="nav__links--link">O nas</a>
-                <a href="index.html#services" class="nav__links--link">Usługi</a>
-                <a href="index.html#gallery" class="nav__links--link">Realizacje</a>
-                <a href="index.html#contact" class="nav__links--link">Kontakt</a>
+                <a href="index.html#o-nas" class="nav__links--link">O nas</a>
+                <a href="index.html#uslugi" class="nav__links--link">Usługi</a>
+                <a href="index.html#realizacje" class="nav__links--link">Realizacje</a>
+                <a href="index.html#kontakt" class="nav__links--link">Kontakt</a>
             </div>
         </div>
         <button class="burger-icon" type="button" title="burger">
@@ -54,14 +53,16 @@
     <main class="subpage-main">
     <section class="gallery-section wrapper" id="">
         <h2 class="section-title subpage-title"></h2>
-        <a href="index.html#gallery" class="gallery-section__link"><img src="./dist/img/icons/back.png"
-                alt="Back arrow icon." class="gallery-section__link--icon">Powrót do głównej</a>
+        <a href="index.html#realizacje" class="gallery-section__link"><img src="./dist/img/icons/back.png"
+                alt="Back arrow icon." class="gallery-section__link--icon" width="24" height="24" loading="lazy">Powrót
+            do głównej</a>
+        <p class="error-message">Coś poszło nie tak, sprawdź połączenie z siecią i spróbuj ponownie...</p>
         <ul class="gallery-section__list">
         </ul>
-        <p class="error-message">Coś poszło nie tak, sprawdź połączenie z siecią i spróbuj ponownie...</p>
         <p id="loader" class="loader">Ładowanie...</p>
+        <p class="loaded-elements-info"></p>
         <button type="button" name="Pokaż więcej" class="show-more-btn">Pokaż więcej <img
-                src="./dist/img/icons/load-icon.svg" alt="Load more icon."></button>
+                src="./dist/img/icons/load-icon.svg" alt="Load more icon." width="24" height="24"></button>
     </section>
 </main>
 
@@ -71,13 +72,14 @@
     <button class="next-btn">❯</button>
     <button class="close-btn">×</button>
 </div>
+
     <footer class="footer">
     <div class="footer__content wrapper">
         <p class="footer__content-text">&copy;<span class="footer__content-text--year"></span> | Usługi Remontowe Mirosław Bączkowski</p>
     </div>
 </footer>
 
-    <script src="./dist/js/main.min.js"></script>
+   <script src="./dist/js/main.min.js" defer></script>
 </body>
 
 </html>
